@@ -77,7 +77,7 @@ SPECTRAL_LINES = {
         "gecis": "Balmer n=3 -> n=2",
         "renk": "#ff4b4b",
         "flare_sens": 1.35,
-        "sdo_default": "AIA 304 Å (Kromosfer & Prominens - 50,000 K)",
+        "solar_default": "GOES-SUVI 304 Å (Kromosfer & Prominens - Canlı)",
         "aciklama": "Güneş fiziğinin en temel kromosferik çizgisidir. Güneş patlamaları sırasında üst atmosferdeki ani ısınma nedeniyle çizginin en dip noktası soğurulmadan salma (emisyon) durumuna geçer."
     },
     "Kalsiyum II K (Ca II K - 3933.7 Å)": {
@@ -91,7 +91,7 @@ SPECTRAL_LINES = {
         "gecis": "Rezonans 4s 2S -> 4p 2P",
         "renk": "#a855f7",
         "flare_sens": 1.60,
-        "sdo_default": "AIA 1700 Å (Üst Fotosfer & Minimum Sıcaklık - 4,500 K)",
+        "solar_default": "GOES-SUVI 171 Å (Alt Korona & Manyetik Arklar - Canlı)",
         "aciklama": "Geniş kanatlara sahip derin ultraviyole sınır çizgisidir. Kromosferik manyetik ağ bölgelerine ve patlamalara karşı en duyarlı çizgidir."
     },
     "Sodyum I D2 (Na I D2 - 5889.9 Å)": {
@@ -105,7 +105,7 @@ SPECTRAL_LINES = {
         "gecis": "Rezonans Dubleti (3s 2S -> 3p 2P)",
         "renk": "#f59e0b",
         "flare_sens": 0.65,
-        "sdo_default": "AIA 1600 Å (Üst Fotosfer & Geçiş Bölgesi - 10,000 K)",
+        "solar_default": "SOHO/SDO Görünür Işık (Güneş Lekeleri & Fotosfer - Canlı)",
         "aciklama": "Fotosfer ile kromosfer arasındaki geçiş sınırını inceler. Büyük patlamalarda çekirdeği sığlaşır, güneş lekelerinde manyetik genişleme gösterir."
     },
     "Magnezyum I b1 (Mg I b1 - 5183.6 Å)": {
@@ -119,7 +119,7 @@ SPECTRAL_LINES = {
         "gecis": "Triplet (3p 3P -> 4s 3S)",
         "renk": "#10b981",
         "flare_sens": 0.55,
-        "sdo_default": "AIA 1600 Å (Üst Fotosfer & Geçiş Bölgesi - 10,000 K)",
+        "solar_default": "GOES-SUVI 195 Å (Korona & Aktif Bölgeler - Canlı)",
         "aciklama": "Yeşil bölgedeki ünlü Mg b üçlüsünün en güçlü üyesidir. Basınç genişlemesi fotosferik yoğunluğu, merkezi ise alt kromosferik ısınmayı yansıtır."
     },
     "Demir I (Fe I - 6302.5 Å) [Manyetik Hassas]": {
@@ -133,7 +133,7 @@ SPECTRAL_LINES = {
         "gecis": "Manyetik Hassas Geçiş (g = 2.5)",
         "renk": "#38bdf8",
         "flare_sens": 0.20,
-        "sdo_default": "HMI Manyetogram (Fotosferik Manyetik Alan Kutupları)",
+        "solar_default": "SOHO/SDO Manyetogram (Fotosferik Manyetik Kutuplar - Canlı)",
         "aciklama": "Yüksek Lande faktörü (g = 2.5) sayesinde Güneş lekelerinin manyetik alan şiddetini ölçmek için kullanılır. Güçlü manyetik alanda Zeeman etkisiyle belirgin biçimde yarılır."
     },
     "Hidrojen H-Beta (Hβ - 4861.3 Å)": {
@@ -147,20 +147,24 @@ SPECTRAL_LINES = {
         "gecis": "Balmer n=4 -> n=2",
         "renk": "#06b6d4",
         "flare_sens": 0.95,
-        "sdo_default": "AIA 304 Å (Kromosfer & Prominens - 50,000 K)",
+        "solar_default": "GOES-SUVI 304 Å (Kromosfer & Prominens - Canlı)",
         "aciklama": "Mavi-yeşil bölgedeki Balmer çizgisidir. H-Alfa'ya göre daha derin atmosfer katmanlarını tarar ve beyaz ışıklı patlamalara duyarlıdır."
     }
 }
 
-SDO_CHANNELS = {
-    "AIA 304 Å (Kromosfer & Prominens - 50,000 K)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0304.jpg",
-    "AIA 193 Å (Korona & Patlama Halkaları - 1.2 Milyon K)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0193.jpg",
-    "AIA 131 Å (Şiddetli Flare Plazması - 10 Milyon K)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0131.jpg",
-    "AIA 171 Å (Sakin Korona & Manyetik Arklar - 600,000 K)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0171.jpg",
-    "AIA 1600 Å (Üst Fotosfer & Geçiş Bölgesi - 10,000 K)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_1600.jpg",
-    "AIA 1700 Å (Üst Fotosfer & Minimum Sıcaklık - 4,500 K)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_1700.jpg",
-    "HMI Manyetogram (Fotosferik Manyetik Alan Kutupları)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIBC.jpg",
-    "HMI Sürekli Işınım (Görünür Işık & Güneş Lekeleri)": "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_HMIIC.jpg"
+# Görüntü önbelleğini kırmak için her 3 dakikada bir değişen zaman damgası
+cache_buster = int(datetime.now(timezone.utc).timestamp() // 180)
+
+# Gerçek Zamanlı NOAA GOES-SUVI ve SOHO/HMI Güneş Gözlem Kanalları (Anlık Güncellenir)
+SOLAR_CHANNELS = {
+    "GOES-SUVI 304 Å (Kromosfer & Prominens - Canlı)": f"https://services.swpc.noaa.gov/images/animations/suvi/primary/304/latest.png?t={cache_buster}",
+    "GOES-SUVI 195 Å (Korona & Aktif Bölgeler - Canlı)": f"https://services.swpc.noaa.gov/images/animations/suvi/primary/195/latest.png?t={cache_buster}",
+    "GOES-SUVI 131 Å (Şiddetli Flare Plazması 10 MK - Canlı)": f"https://services.swpc.noaa.gov/images/animations/suvi/primary/131/latest.png?t={cache_buster}",
+    "GOES-SUVI 171 Å (Alt Korona & Manyetik Arklar - Canlı)": f"https://services.swpc.noaa.gov/images/animations/suvi/primary/171/latest.png?t={cache_buster}",
+    "GOES-SUVI 284 Å (Yüksek Sıcaklık Koronası - Canlı)": f"https://services.swpc.noaa.gov/images/animations/suvi/primary/284/latest.png?t={cache_buster}",
+    "GOES-SUVI 094 Å (Sıcak Patlama Çekirdeği - Canlı)": f"https://services.swpc.noaa.gov/images/animations/suvi/primary/094/latest.png?t={cache_buster}",
+    "SOHO/SDO Manyetogram (Fotosferik Manyetik Kutuplar - Canlı)": f"https://soho.nascom.nasa.gov/data/realtime/hmi_mag/1024/latest.jpg?t={cache_buster}",
+    "SOHO/SDO Görünür Işık (Güneş Lekeleri & Fotosfer - Canlı)": f"https://soho.nascom.nasa.gov/data/realtime/hmi_igr/1024/latest.jpg?t={cache_buster}"
 }
 
 @st.cache_data(ttl=60)
@@ -247,7 +251,7 @@ doppler_hiz_kms = st.sidebar.slider(
     min_value=-150, max_value=150, value=0, step=5
 )
 
-if st.sidebar.button("🔄 Canlı NOAA & SDO Verisini Yenile", use_container_width=True):
+if st.sidebar.button("🔄 Canlı NOAA & Güneş Görüntüsünü Yenile", use_container_width=True):
     st.cache_data.clear()
 
 df_xray, df_mag, hata = fetch_noaa_live_data()
@@ -268,7 +272,7 @@ sinif_kisa, sinif_uzun, sinif_renk = classify_flare(kullanilan_flux)
 max_kisa, _, _ = classify_flare(max_flux_6h)
 
 st.title("☀️ Güneş Spektroskopisi ve Canlı Uzay Havası Gözlemevi")
-st.caption("NOAA GOES Canlı Telemetri | NASA SDO Görüntüleme | Voigt Tayf & Eşdeğer Genişlik Analizi")
+st.caption("NOAA GOES-18 XRS & SUVI Canlı Telemetri | SOHO/SDO Manyetogram | Voigt Tayf & Eşdeğer Genişlik Analizi")
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
@@ -327,7 +331,7 @@ ew_degisim_ma = ew_active_ma - ew_quiet_ma
 cizgi_merkez_derinlik = (1.0 - float(np.min(flux_active))) * 100.0
 
 st.markdown("---")
-st.subheader(f"🌈 {secilen_cizgi_adi} — Yüksek Çözünürlüklü Tayf Profili & NASA SDO Gözlemi")
+st.subheader(f"🌈 {secilen_cizgi_adi} — Yüksek Çözünürlüklü Tayf Profili & Canlı Güneş Gözlemi")
 
 col_spec, col_info, col_sdo = st.columns([2.1, 1.0, 1.1])
 
@@ -383,16 +387,16 @@ with col_info:
     """)
 
 with col_sdo:
-    st.markdown("#### 🛰️ Canlı NASA SDO Güneş Diski")
-    varsayilan_sdo_index = list(SDO_CHANNELS.keys()).index(cizgi["sdo_default"])
-    secilen_sdo_kanal = st.selectbox(
-        "SDO / AIA & HMI Gözlem Filtresi:",
-        list(SDO_CHANNELS.keys()),
-        index=varsayilan_sdo_index
+    st.markdown("#### 🛰️ Canlı GOES-SUVI / SOHO Güneş Diski")
+    varsayilan_idx = list(SOLAR_CHANNELS.keys()).index(cizgi["solar_default"])
+    secilen_solar_kanal = st.selectbox(
+        "Gerçek Zamanlı Uydu Gözlem Filtresi:",
+        list(SOLAR_CHANNELS.keys()),
+        index=varsayilan_idx
     )
     st.image(
-        SDO_CHANNELS[secilen_sdo_kanal],
-        caption=f"NASA SDO Canlı: {secilen_sdo_kanal}",
+        SOLAR_CHANNELS[secilen_solar_kanal],
+        caption=f"Canlı Telemetri ({son_zaman_str}): {secilen_solar_kanal}",
         use_container_width=True
     )
 
